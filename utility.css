@@ -14,6 +14,9 @@
   margin: auto;
 }
 
+.m-hf {
+  margin: 0.5rem;
+}
 .m-1 {
   margin: 1rem;
 }
@@ -23,6 +26,9 @@
 .m-3 {
   margin: 3rem;
 }
+.p-hf {
+  padding: 0.5rem;
+}
 .p-1 {
   padding: 1rem;
 }
@@ -31,6 +37,11 @@
 }
 .p-3 {
   padding: 3rem;
+}
+
+.my-hf {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-1 {
@@ -48,6 +59,11 @@
   padding-bottom: 3rem;
 }
 
+.mx-hf {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-1 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -63,6 +79,11 @@
   padding-right: 3rem;
 }
 
+.px-hf {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-1 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -76,6 +97,11 @@
 .px-3 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.py-hf {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-1 {
