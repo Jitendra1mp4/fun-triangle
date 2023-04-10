@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
     <title>Fun with Triangle</title>
 </head>
+
 <body>
-    <h1>Welcome to fun with Triangle</h1>
+    <nav class="">
+        <span class="brand">Fun Triangle</span>
+        <ul class="list-no-bullet">
+            <li class="list-item-inline nav-pills">
+                <a class="link link-text-dec-none link-active" href="/">Is triangle</a>
+            </li>
+            <li class="list-item-inline nav-pills">
+                <a class="link link-text-dec-none" href="/quiz.html">Quiz</a>
+            </li>
+            <li class="list-item-inline nav-pills">
+                <a class="link link-text-dec-none" href="/hypotenuse.html">Hypotenuse</a>
+            </li>
+            
+            <li class="list-item-inline nav-pills">
+                <a class="link link-text-dec-none" href="/areaOfTriangle.html">Area of triangle</a>
+            </li>
+            
+        </ul>
+    </nav>
+    <header>
+        <h1 class="hero-text my-2">Fun <span class="hero-name">Triangle</span></h1>
+    </header>
+    <main class="container-center">
+        <h3 class="m-1 p-2">Enter the Angles to check whether they form a Triangle or not</h3>
+        <div class="form-part m-1 p-1">
+            <label for="angle-1" class="m-1 p-1">Angle 1</label>
+            <input class="m-hf p-hf round-1 br-1"  type="number" min="1" name="angle-1" id="angle-1">
+        </div>
+        <div class="form-part m-1 p-1">
+            <label for="angle-2" class="m-1 p-1">Angle 2</label>
+            <input class="m-hf p-hf round-1 br-1" type="number" min="1"  name="angle-2" id="angle-2">
+        </div>
+        <div class="form-part m-1 p-1">
+            <label for="angle-3" class="m-1 p-1">Angle 3</label>
+            <input class="m-hf p-hf round-1 br-1" type="number" min="1"  name="angle-3" id="angle-3">
+        </div>
+        <div class="form-part m-1 p-1">
+            <button class="px-1 py-hf m-1 btn-primary" id="btn-check">Check</button>
+        </div>
+        <div class="output my-3 p-2 br-1" id="div-output"></div>
+    </main>
+    <footer class="container-fluid">
+        <div class="container-center">
+            <div class="brand">Fun Triangle</div>
+            <p class="label clr-light">Social links of the developer</p>
+            <ul class="list-no-bullet list-social-links">
+                <li class="list-item-inline"> <a class="link link-text-dec-none"
+                        href="https://www.instagram.com/jit2endra/" class="link link-social">Instagram</a></li> |
+                <li class="list-item-inline"> <a class="link link-text-dec-none"
+                        href="https://www.linkedin.com/in/jitendra1mp4/" class="link link-social">Linkedin</a></li> |
+                <li class="list-item-inline"> <a class="link link-text-dec-none" href="https://github.com/jitendra1mp4"
+                        class="link link-social">Github</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
