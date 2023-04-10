@@ -16,3 +16,14 @@ const questions = [
     opt: ["90 degree", "180 degree", "360 degree"],
   },
 ];
+
+const askQns = () => {
+  for (let i = 0; i < questions.length; i++) {
+    console.log(`Questions ${i + 1}. ${questions[i].qn}`);
+    for (let j = 0; j < questions[i].opt.length; j++) {
+      console.log(`${j + 1}. ${questions[i].opt[j]}`);
+    }
+  }
+};
+
+askQns();
