@@ -39,5 +39,7 @@ const handleCheckAnswerClick = () => {
     i++;
   }
   outPut.innerHTML= `your score is <strong> ${score} </Strong>` ;
+  outPut.className = outPut.className+" border-norm-dark round-hf"
+  console.log(outPut.className)
 };
 btnCheckAnswers.addEventListener("click", handleCheckAnswerClick);
