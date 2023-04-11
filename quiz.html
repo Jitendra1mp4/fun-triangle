@@ -14,15 +14,15 @@
     <nav class="">
         <!-- <span class="brand clr-light">Fun Triangle</span> -->
         <ul class="list-no-bullet">
-            <li class="list-item-inline nav-pills">
+            <li class="nav-pills">
                 <a class="link link-text-dec-none" href="/">Is triangle</a>
-            </li>
-            <li class="list-item-inline nav-pills">
+             </li>
+            <li class="nav-pills">
                 <a class="link link-text-dec-none link-active" href="/quiz.html">Quiz</a>
-            </li>
-            <li class="list-item-inline nav-pills">
+             </li>
+            <li class="nav-pills">
                 <a class="link link-text-dec-none" href="/hypotenuse.html">Hypotenuse</a>
-            </li>
+             </li>
 
             <li class="list-item-inline nav-pills">
                 <a class="link link-text-dec-none" href="/area.html">Area</a>
@@ -34,7 +34,84 @@
         <h1 class="hero-text">Fun <span class="hero-name">Triangle</span></h1>
     </header>
     <main class="container-center my-hf">
-       
+        <form class="form-quiz">
+
+            <div class="container-qna p-1 m-2 b-1">
+                <p class="qn m-hf">The sum of the length of any two sides of a triangle is always ______ than the third
+                    side.
+                </p>
+                <div class="div-options">
+                    <ul class="list-no-bullet">
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="smaller" name="question-1">smaller
+                            </label>
+                        </li>
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="equal" name="question-1"> equal
+                            </label>
+                        </li>
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="greater" name="question-1">greater
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-qna p-1 m-2 b-1">
+                <p class="qn m-hf">How many vertices a triangle have?
+                </p>
+                <div class="div-options">
+                    <ul class="list-no-bullet">
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="2" name="question -2">2
+                            </label>
+                        </li>
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="3" name="question -2">3
+                            </label>
+                        </li>
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="4" name="question -2">4
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-qna p-1 m-2 b-1">
+                <p class="qn m-hf">What is the sum of all three angles of a triangle?
+                </p>
+                <div class="div-options">
+                    <ul class="list-no-bullet">
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="90 degree" name="question-3">90 degree
+                            </label>
+                        </li>
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="360 degree" name="question-3">360 degree
+                            </label>
+                        </li>
+                        <li class="mx-hf my-hf ta-left">
+                            <label>
+                                <input type="radio" value="180 degree" name="question-3">180 degree
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+        <div class="container-center">
+            <button class="btn-primary btn" id="btn-check-answer">Check Answers</button>
+            <div class="output m-2 p-1">
+            </div>
+        </div>
     </main>
     <footer class="container-fluid">
         <div class="container-center">
@@ -52,7 +129,7 @@
             </ul>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script-quiz.js"></script>
 </body>
 
 </html>
