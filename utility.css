@@ -2,6 +2,7 @@
   --color-primary: rgb(67, 133, 255);
   --color-primary-light: rgb(213, 213, 255);
   --color-dark: rgb(22, 22, 22);
+  --color-gray: rgb(28, 32, 43);
 }
 
 .container-fluid {
@@ -119,10 +120,20 @@
   padding-bottom: 3rem;
 }
 
+.br-1 {
+  border-width: 1px;
+}
+
+.round-hf {
+  border-radius: 0.4rem;
+}
+
 .clr-primary {
   color: var(--color-primary);
 }
-
+.clr-light {
+  color: aliceblue;
+}
 .clr-dark {
   color: var(--color-dark);
 }
@@ -152,4 +163,24 @@ button,
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
   background-color: white;
+}
+
+.d-block {
+  display: block;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-center {
+  text-align: justify;
+}
+
+.ta-right {
+  text-align: right;
 }
