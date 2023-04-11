@@ -34,7 +34,19 @@
         <h1 class="hero-text">Fun <span class="hero-name">Triangle</span></h1>
     </header>
     <main class="container-center my-hf">
-       
+        <h3 class="mx-hf">Enter length of 2 sides to calculate hypotenuse = √(a²+b²)</h3>
+        <div class="form-part m-1 p-1">
+            <label for="side-1" class="m-1 p-1">a = </label>
+            <input class="input-side m-hf p-hf round-hf bw-1" type="number" min="1" name="side-1" id="side-1">
+        </div>
+        <div class="form-part m-1 p-1">
+            <label for="side-2" class="m-1 p-1">b = </label>
+            <input class="input-side m-hf p-hf round-hf bw-1" type="number" min="1" name="side-2" id="side-2">
+        </div>
+        <div class="form-part m-1 p-1">
+            <button class="px-1 py-hf m-1 btn-primary" id="btn-get-hypo">Get Hypotenuse</button>
+        </div>
+        <div class="output my-3 p-2 br-1" id="div-output"></div>
     </main>
     <footer class="container-fluid">
         <div class="container-center">
@@ -52,7 +64,7 @@
             </ul>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script-hypo.js"></script>
 </body>
 
 </html>
