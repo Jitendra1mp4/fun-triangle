@@ -1,5 +1,5 @@
 // get required elements
-const inputAngels = document.getElementsByTagName("input");
+const inputAngels = document.getElementsByClassName("input-angle");
 const btnCheck = document.getElementById("btn-check");
 const divOutput = document.getElementById("div-output");
 
