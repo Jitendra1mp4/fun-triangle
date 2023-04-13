@@ -1,6 +1,24 @@
 const quizForm = document.querySelector(".form-quiz");
 const btnCheckAnswers = document.querySelector("#btn-check-answer");
 const outPut = document.querySelector(".output");
+
+const ans = ["greater", "3", "180 degree"];
+
+const handleCheckAnswerClick = () => {
+  const quizFormData = new FormData(quizForm);
+  let score = 0;
+  let i = 0;
+  for (let value of quizFormData.values()) {
+    if (value === ans[i]) score += 5;
+    i++;
+  }
+  outPut.innerHTML = `your score is <strong> ${score} </Strong>`;
+  outPut.className = outPut.className + " border-norm-dark round-hf";
+};
+btnCheckAnswers.addEventListener("click", handleCheckAnswerClick);
+
+
+// for cli mode 
 // const read = require('readline-sync')
 // const questions = [
 //   {
@@ -19,7 +37,6 @@ const outPut = document.querySelector(".output");
 //     opt: ["90 degree", "180 degree", "360 degree"],
 //   },
 // ];
-const ans = ["greater", "3", "180 degree"];
 // const askQns = () => {
 //   for (let i = 0; i < questions.length; i++) {
 //     console.log(`Questions ${i + 1}. ${questions[i].qn}`);
@@ -28,18 +45,4 @@ const ans = ["greater", "3", "180 degree"];
 //     }
 //   }
 // };
-
 // askQns();
-const handleCheckAnswerClick = () => {
-  const quizFormData = new FormData(quizForm);
-  let score = 0;
-  let i = 0;
-  for (let value of quizFormData.values()) {
-    if ( value === ans[i]) score += 5;
-    i++;
-  }
-  outPut.innerHTML= `your score is <strong> ${score} </Strong>` ;
-  outPut.className = outPut.className+" border-norm-dark round-hf"
-  console.log(outPut.className)
-};
-btnCheckAnswers.addEventListener("click", handleCheckAnswerClick);
