@@ -1,9 +1,12 @@
+// selecting all the required elements
 const quizForm = document.querySelector(".form-quiz");
 const btnCheckAnswers = document.querySelector("#btn-check-answer");
 const outPut = document.querySelector(".output");
 
+// array of answers
 const ans = ["greater", "3", "180 degree"];
 
+// function that handles the click event of check answers button.
 const handleCheckAnswerClick = () => {
   const quizFormData = new FormData(quizForm);
   let score = 0;
@@ -15,6 +18,8 @@ const handleCheckAnswerClick = () => {
   outPut.innerHTML = `your score is <strong> ${score} </Strong>`;
   outPut.className = outPut.className + " border-norm-dark round-hf";
 };
+
+// added listener to check-ans btn
 btnCheckAnswers.addEventListener("click", handleCheckAnswerClick);
 
 
