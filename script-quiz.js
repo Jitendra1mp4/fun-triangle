@@ -34,8 +34,8 @@ const handleCheckAnswerClick = () => {
   const quizFormData = new FormData(quizForm);
   let score = 0;
   let i = 0;
-  for (let entry of quizFormData.entries()) {
-    if (entry[1] == ans[i]) score += 5;
+  for (let value of quizFormData.values()) {
+    if ( value === ans[i]) score += 5;
     i++;
   }
   outPut.innerHTML= `your score is <strong> ${score} </Strong>` ;
