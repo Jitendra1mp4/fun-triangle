@@ -8,7 +8,7 @@ btnGetHypo.addEventListener("click", () => {
   // get sum of elements
   const sum = getSum();
   const hypo = Math.sqrt(sum) ;
-  if (sum !== undefined) setMessage(hypo);
+  if (sum !== undefined) inform(hypo);
 });
 
 // arrow function to calculate sum.
@@ -16,7 +16,7 @@ const getSum = () => {
   let sum = 0;
   for (let i = 0; i < 2; i++) {
     if (inputSide[i].value === "" || Number(inputSide[i].value) < 0) {
-      alert("Enter positive numbers for each sides.");
+      inform();
       return undefined;
     } else {
       sum += (Number(inputSide[i].value))**2;
@@ -26,7 +26,10 @@ const getSum = () => {
 };
 
 // arrow function to set the message (result)
-const setMessage = (hypo) => {
-  let outputMessage = `Hypotenuse = <strong>${hypo}</strong>`;
-    divOutput.innerHTML = outputMessage;
+const inform = (hypo="") => {
+  let message
+  if(hypo !=="")
+  message = `Hypotenuse = <strong>${hypo}</strong>`;
+  else message = "Enter positive numbers for each sides.";
+    divOutput.innerHTML = message;
 };

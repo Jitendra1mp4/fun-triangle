@@ -9,8 +9,8 @@ btnGetArea.addEventListener("click", () => {
   // get sum of elements
   if (inputBase.value !== "" || inputBase.value !== "") {
     const area = getArea(inputBase.value, inputHeight.value);
-    setMessage(area);
-  } else alert("Please enter the values and try again!");
+    inform(area);
+  } else inform();
 });
 
 // arrow function to calculate area.
@@ -19,7 +19,9 @@ const getArea = (base, height) => {
 };
 
 // arrow function to set the message (result)
-const setMessage = (area) => {
-  let outputMessage = `Area of Triangle = <strong>${area}</strong>`;
-  divOutput.innerHTML = outputMessage;
+const inform = (area = "") => {
+  let message;
+  if (area !== "") message = `Area of Triangle = <strong>${area}</strong>`;
+  else message = "Please enter the values and try again!";
+  divOutput.innerHTML = message;
 };
