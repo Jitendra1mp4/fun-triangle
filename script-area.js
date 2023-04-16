@@ -24,4 +24,5 @@ const inform = (area = "") => {
   if (area !== "") message = `Area of Triangle = <strong>${area}</strong>`;
   else message = "Please enter the values and try again!";
   divOutput.innerHTML = message;
+  divOutput.className = divOutput.className+ " border-norm round-hf";
 };

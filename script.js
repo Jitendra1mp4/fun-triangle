@@ -25,12 +25,12 @@ const getSum = () => {
 };
 
 // arrow function to set the message (result)
-const inform = (sum="") => {
+const inform = (sum = "") => {
   let message;
   if (sum === "") message = "Enter positive numbers for each angle.";
   else if (sum === 180)
     message = "<strong>Yes!</strong> given angel can form a triangle.🎉️";
-  else
-    message = "<strong>No!</strong> given angel can NOT form a triangle.";
+  else message = "<strong>No!</strong> given angel can NOT form a triangle.";
   divOutput.innerHTML = message;
+  divOutput.className = divOutput.className+ " border-norm round-hf";
 };
